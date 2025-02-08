@@ -55,14 +55,14 @@ function StatsOverview({ users }) {
       <div className="flex justify-between items-center bg-white p-4 rounded-xl">
         <div>
           {uniqueNationalities ? (<p className="font-bold text-2xl">{uniqueNationalities}</p>) : (<Loader />)}
-          <p className="text-[14px]">Different Nationality</p>
+          <p className="text-[14px] text-gray-400">Different Nationality</p>
         </div>
         <FontAwesomeIcon className="text-4xl" icon={faFlag} />
       </div>
       <div className="flex justify-between items-center bg-white p-4 rounded-xl">
         <div>
           {mostGender ? (<p className="font-bold text-2xl capitalize">{mostGender}</p>) : (<Loader />)}
-          <p className="text-[14px]">Most Gender</p> 
+          <p className="text-[14px] text-gray-400">Most Gender</p> 
         </div>
         {mostGender ? (
           <FontAwesomeIcon className="text-4xl" icon={mostGender === 'male' ? faMars : faVenus} />
@@ -71,14 +71,14 @@ function StatsOverview({ users }) {
       <div className="flex justify-between items-center bg-white p-4 rounded-xl">
         <div>
           {averageAge ? (<p className="font-bold text-2xl">~{averageAge}</p>) : (<Loader />)}
-          <p className="text-[14px]">Average Age</p>
+          <p className="text-[14px] text-gray-400">Average Age</p>
         </div>
         <FontAwesomeIcon className="text-5xl" icon={faPersonWalking} />
       </div>
       <div className="flex justify-between items-center bg-white p-4 rounded-xl">
         <div>
           {averageMembership ? (<p className="font-bold text-2xl">~{averageMembership.toFixed(0)} year</p>) : (<Loader />)} 
-          <p className="text-[14px]">Average Membership</p>
+          <p className="text-[14px] text-gray-400">Average Membership</p>
         </div>
         <FontAwesomeIcon className="text-4xl" icon={faUsers} />
       </div>
